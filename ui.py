@@ -86,3 +86,7 @@ def root() -> HTMLResponse:
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
+
+def cert(certificate) -> HTMLResponse:    
+    html_content = certificate
+    return HTMLResponse(content=html_content, status_code=200)
